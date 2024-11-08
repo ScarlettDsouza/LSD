@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Lumpy Skin Disease Detection in Cattle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#" onclick="showSection('prediction')">Prediction</a></li>
+                <li><a href="#" onclick="showSection('about')">About</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <header class="header">
+                <h1>Lumpy Skin Disease Detection in Cattle</h1>
+            </header>
+
+            <!-- Prediction Page -->
+            <section id="prediction" class="section">
+                <h2>Prediction</h2>
+                <form>
+                    <!-- Image Upload for Cattle -->
+                    <label for="cattle_image">Upload Cattle Image:</label>
+                    <input type="file" id="cattle_image" name="cattle_image" accept="image/*" required>
+
+                    <button type="submit">Generate Report</button>
+                </form>
+            </section>
+
+            <!-- About Page -->
+            <section id="about" class="section" style="display: none;">
+                <h2>About</h2>
+                <p>
+                    Lumpy Skin Disease (LSD) is a viral disease affecting cattle, leading to nodules on the skin, which can result in severe health and economic impacts for livestock farmers. Early and accurate detection of LSD is critical to containing outbreaks, minimizing losses, and safeguarding animal welfare. This project leverages advanced image processing and deep learning techniques to assist in the timely diagnosis of LSD.
+
+                    Using a convolutional neural network (CNN), this system analyzes images of cattle and classifies them as "Infected" or "Healthy." Our goal is to provide an accessible, user-friendly solution that enables farmers, veterinarians, and agricultural organizations to quickly assess the health of livestock based on visual cues.
+                </p>
+                
+            </section>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
